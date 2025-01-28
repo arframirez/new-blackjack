@@ -8,6 +8,6 @@ Pasos para ejecutar proyecto:
 
 ## Produccion
 
-1. ejecutar  ````npm run build```
+1. ejecutar  ```npm run build```
 2. tomar la carpeta ```dist``` y desplegarla
    
