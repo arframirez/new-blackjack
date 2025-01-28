@@ -1,0 +1,105 @@
+html, body{
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 109, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-shadow: 3px 3px 3px #777;
+}
+
+
+.titulo {
+  background-color: black;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgb(34, 65, 30);
+}
+.flex{
+   margin-top: 10px;
+   display: flex; 
+   justify-content: center;
+}     
+
+.btn {
+ background-color: rgb(2, 169, 216);
+ border-radius: 10px;
+ color: white;
+ padding: 10px;
+ margin: 2px;
+ transition: 150ms;
+ border: 0px;
+ font-size: medium;
+ box-shadow: 5px 5px 1px#496c6e;
+}
+
+.btn:hover{
+  transform: scale(1.1,1.2);
+  box-shadow: inset 0px -7px  20px rgb(0, 75, 95);
+  color: aliceblue;
+}
+
+.new{
+  background-color: red;
+  box-shadow: 5px 5px 1px #6e4949;
+}
+.new:hover{
+  box-shadow: inset 0px -7px  20px rgb(156, 1, 1);
+
+}
+.margen{
+  margin-left: 20px;
+
+}
+ 
+.carta {
+  position: relative;
+  width: 150px;
+  left: 100px;
+  margin-left: -60px;
+  box-shadow: -4px 0px 10px rgb(108, 100, 100);
+  border-radius: 10px;
+  animation-name: change-scale;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  /* animation-iteration-count: 1; */
+}
+
+@keyframes change-scale{
+  0%{ 
+      bottom: 50px;
+      transform: scale(1.2,1.2);
+      transform: rotate(-25deg);
+  }
+  40%{   
+      bottom: 40px;
+  }
+  55%{   
+      bottom: 20px ;
+     
+  }
+  70%{   
+      bottom: 10px;
+       transform: scale(1.06,1.06);
+  }
+
+  100%{
+      bottom: 0px;
+      width: 150px;
+  }
+}
+
+/* 
+@keyframes change-scale{
+  0%{
+      transform: scale(1.2,1.2);
+  }
+
+  100%{
+      width: 150px;
+  }
+} */
+
+#jugador-cartas, #computadora-cartas{
+  height: 250px;
+}

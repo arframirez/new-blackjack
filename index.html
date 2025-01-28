@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/public/vite.svg">
+    <title>Blackjack</title>
+
+
+</head>
+<body>
+
+    <header class="titulo">
+        Blackjack
+    </header>
+   <div class="flex">
+      <div>
+          <button id="btnNuevo" class="btn new">Nuevo Juego</button>
+          <button id="btnPedir" class="btn pedir">Pedir Carta</button>
+          <button id="btnDetener" class="btn stop">Detener</button>
+       </div>
+    </div>
+
+    <div>
+        <div class="margen">
+            <h1>Jugador 1 - <small>0</small></h1>
+            <div id="jugador-cartas" class="divCartas">
+                <!-- <img src="/assets/cartas/2C.png" class="carta"> -->
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="margen">
+            <h1>Computadora 1 - <small>0</small></h1>
+            <div id="computadora-cartas"  class="divCartas">
+                <!-- <img src="/assets/cartas/2C.png" class="carta"> -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="assets/js/underscore-min.js"></script> -->
+    <script src="assets/js/juego.js"></script>
+
+    <script>
+        console.log(miModulo)
+
+        document.querySelector('#btnNuevo').addEventListener('click', () => {
+            miModulo.nuevoJuego();
+        })
+    </script>
+
+
+<div id="app"></div>
+<script type="module" src="/main.js"></script>
+    
+</body>
+</html>
+
